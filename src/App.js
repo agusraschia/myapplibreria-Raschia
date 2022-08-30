@@ -1,7 +1,9 @@
 
 import './App.css';
+import 'core-js/actual';
 
 function App() {
+  console.log(Array.from(new Set([1, 2, 3, 3, 2])));
 
   let imagen = "libro 1.png";
   let titulo = "MENTE MILLONARIA";
