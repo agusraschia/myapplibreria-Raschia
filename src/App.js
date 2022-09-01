@@ -1,9 +1,10 @@
 
 import './App.css';
 import 'core-js/actual';
-import Header from './Componets/Header';
-import Footer from './Componets/Footer';
-import Navbar from './Componets/Navbar';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import Navbar from './components/Navbar';
+import ItemListContainer from './components/ItemListContainer';
 
 function App() {
   console.log(Array.from(new Set([1, 2, 3, 3, 2])));
@@ -24,6 +25,7 @@ function App() {
       <div>
         <Header />
         <Navbar />
+        <ItemListContainer />
 
         <h2> Productos </h2>
         <ul>
@@ -53,7 +55,7 @@ function App() {
           
           </div>
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 }
