@@ -5,6 +5,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Navbar from './components/Navbar';
 import ItemListContainer from './components/ItemListContainer';
+import CarroSuma from './components/itemCount';
 
 function App() {
   console.log(Array.from(new Set([1, 2, 3, 3, 2])));
@@ -26,6 +27,7 @@ function App() {
         <Header />
         <Navbar />
         <ItemListContainer />
+        <CarroSuma />
 
         <h2> Productos </h2>
         <ul>
