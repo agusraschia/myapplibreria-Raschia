@@ -1,15 +1,18 @@
-import React from "react";
+import React from 'react';
 
-const Item = ({nombre, imagen, precio}) => {
-    return (
-        <div className="card">
-            <img src={imagen} cassName="card-img-top" alt={nombre} />
-            <div className="card-body">
-                <h5 className="card-tittle text-center"><b>{nombre}</b></h5>
-                <p className="card-text text-center">${precio}</p>
-            </div>
-        </div>
-    )
-}
+const Item = ({ item }) => {
+  return (
+    <div className="card">
+      <img src={item.thumbnail} classNam="card-img-top" alt={item.tittle} />
+      <div className="card-body">
+        <h5 className="card-title">{item.tittle}</h5>
+        <p className="card-text">$ {item.price}</p>
+        <a href={item.permalink} className="btn btn-primary" target = "_blank">
+          Comprar
+        </a>
+      </div>
+    </div>
+  );
+};
 
 export default Item;

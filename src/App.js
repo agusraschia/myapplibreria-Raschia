@@ -6,6 +6,7 @@ import Footer from './components/Footer';
 import Navbar from './components/Navbar';
 import ItemListContainer from './components/ItemListContainer';
 import CarroSuma from './components/itemCount';
+import ItemDetailContainer from './components/ItemDetailContainer';
 
 function App() {
   console.log(Array.from(new Set([1, 2, 3, 3, 2])));
@@ -27,6 +28,8 @@ function App() {
         <Header />
         <Navbar />
         <ItemListContainer />
+        <ItemDetailContainer />
+        
         <CarroSuma />
 
         <h2> Productos </h2>
@@ -57,6 +60,7 @@ function App() {
           
           </div>
       </div>
+      
       <Footer />
     </div>
   );
