@@ -5,7 +5,7 @@ class CartWidget extends Component {
     render() { 
         return ( 
             <div>
-                <img src={imagen} className= "img-fluid"/>
+                <img src={imagen}  className= "img-fluid"/>
             </div>
         )
     }

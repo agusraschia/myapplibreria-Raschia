@@ -15,9 +15,7 @@ const ItemListContainer = () => {
     const [items, setItems] = useState ([]);
     useEffect(() => {
         const promesa = new Promise ((resolve, reject) => { 
-            setTimeout(() => {
-                resolve(productos);
-            }, 2000);
+            
             });
 
             promesa.then((respuesta) => { 

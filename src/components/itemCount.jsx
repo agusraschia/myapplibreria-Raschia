@@ -1,7 +1,7 @@
 import React,  {useState} from "react";
 
 const CarroSuma = () => {
-    const [stock, setStock] = useState("Agregar al carrito");
+    
     const [clicks, setClicks] = useState(0);
 
     return (

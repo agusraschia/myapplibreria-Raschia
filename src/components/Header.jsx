@@ -7,9 +7,10 @@ const Header = () => {
             padding: "20"
         };
 
+       
     return (
         <div style= {estilo}>
-            <p> Encabezado !</p>
+            <p> Libreria "Los tres mosqueteros"</p>
              <hr />
         </div>
     )

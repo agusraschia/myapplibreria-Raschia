@@ -4,9 +4,14 @@ import 'core-js/actual';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Navbar from './components/Navbar';
-import ItemListContainer from './components/ItemListContainer';
-import CarroSuma from './components/itemCount';
-import ItemDetailContainer from './components/ItemDetailContainer';
+import {BrowserRouter, Routes, Route} from "react-router-dom";
+import Inicio from './components/Inicio';
+import Nosotros from './components/Nosotros';
+import Productos from './components/Productos';
+import Detalle from './components/Detalle';
+
+
+
 
 function App() {
   console.log(Array.from(new Set([1, 2, 3, 3, 2])));
@@ -27,10 +32,24 @@ function App() {
       <div>
         <Header />
         <Navbar />
-        <ItemListContainer />
-        <ItemDetailContainer />
+        <BrowserRouter>
+          <Routes>
+            <Route exact path="/inicio" element={<Inicio/>} />
+            <Route exact path="/nosotros" element={<Nosotros/>} />
+            <Route exact path="/producto/:id" element={<Detalle/>} />
+            <Route exact path="/categoria/:genero" element={<Productos/>} />
+            <Route exact path="/productos" element={<Productos/>} />
+
+          </Routes>
+        </BrowserRouter>  
         
-        <CarroSuma />
+            
+        
+        
+        
+          
+        
+          
 
         <h2> Productos </h2>
         <ul>
