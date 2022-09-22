@@ -1,87 +1,26 @@
-
 import './App.css';
-import 'core-js/actual';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import Navbar from './components/Navbar';
-import {BrowserRouter, Routes, Route} from "react-router-dom";
-import Inicio from './components/Inicio';
-import Nosotros from './components/Nosotros';
-import Productos from './components/Productos';
-import Detalle from './components/Detalle';
-
-
-
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from './components/Home/Home';
+import Cart from './components/Cart/Cart';
+import Checkout from './components/Checkout/Checkout';
+import ItemListContainer from './components/ItemListContainer/ItemListContainer';
+import ItemDetailsContainer from './components/ItemDetailsContainer/ItemDetailsContainer';
+import Provider from './components/Context/Context';
 
 function App() {
-  console.log(Array.from(new Set([1, 2, 3, 3, 2])));
-
-  let imagen = "libro 1.png";
-  let titulo = "MENTE MILLONARIA";
-  let descripcion = "Este libro une la educación financiera con el desarrollo personal. Contiene información útil para conocer los pilares de la abundancia; revela los secretos de la nutrición financiera; y enseña cómo alcanzar la prosperidad individual y en pareja. Incluye lineamientos prácticos para mejorar las (...)";
- 
- 
-  const productos = [
-    {id:1, nombre: "libro 1", precio: "1500"},
-    {id:2, nombre: "libro 2", precio: "2500"},
-    {id:3, nombre: "libro 3", precio: "3000"}
-]
-
-   return (
-    <div>
-      <div>
-        <Header />
-        <Navbar />
-        <BrowserRouter>
-          <Routes>
-            <Route exact path="/inicio" element={<Inicio/>} />
-            <Route exact path="/nosotros" element={<Nosotros/>} />
-            <Route exact path="/producto/:id" element={<Detalle/>} />
-            <Route exact path="/categoria/:genero" element={<Productos/>} />
-            <Route exact path="/productos" element={<Productos/>} />
-
-          </Routes>
-        </BrowserRouter>  
-        
-            
-        
-        
-        
-          
-        
-          
-
-        <h2> Productos </h2>
-        <ul>
-          {
-            productos.map(item => (
-              <li key ={item.id}>{item.nombre} - $ {item.precio}</li> 
-              
-            ))
-          }
-        </ul>
-          <div className='container'>
-
-            <div className='row'>
-              <div className='col-md-4 offset-md-2'> 
-                <img src={imagen} alt={titulo} className= "img-fluid"/>
-              
-              </div>
-            <div class='col-md-4'>
-              <h1>{titulo}</h1>
-              <p>{descripcion}</p>
-
-              </div>
-            </div>
-          
-
-
-          
-          </div>
-      </div>
-      
-      <Footer />
-    </div>
+  return (
+    <Provider>
+      <BrowserRouter>
+        <Routes>
+          <Route path={"/"} element={<Home />} />
+          <Route path={"/category/:id"} element={<ItemListContainer />} />
+          <Route path={"/menu"} element={<ItemListContainer />} />
+          <Route path={"/item/:id"} element={<ItemDetailsContainer />} />
+          <Route path={"/cart"} element={<Cart />} />
+          <Route path={"/checkout"} element={<Checkout />} />
+        </Routes>
+      </BrowserRouter>
+    </Provider>
   );
 }
 

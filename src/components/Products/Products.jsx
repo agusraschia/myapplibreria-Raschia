@@ -1,0 +1,7 @@
+const productos = [
+    {id:1, nombre:"Orgullo y prejuicio", descripcion:"«Si la auténtica prueba para juzgar la calidad de una novela es la relectura, y los placeres que aporta la relectura, entonces Orgullo y prejuicio supera cualquier novela jamás escrita», Harold Bloom ;)", imagen:"orgulloyprejuicio.png", precio:1500, categoria:"Novela", stock:5},
+    {id:2, nombre:"Cumbres borrascosas",descripcion:"Lockwood es el nuevo inquilino de la Granja de los Tordos, propiedad de Heathcliff. A fin de concretar los detalles del arriendo, visita a Heathcliff en su residencia, llamada Cumbres Borrascosas. Dada la hostilidad con que es recibido, le pide al ama de llaves de la Granja, Nelly Dean, que le explique la razón, y esta procede a contarle la historia familiar.", imagen:"cumbresborrascosas.png", precio:2000, categoria:"Novela", stock:6},
+    {id:3, nombre:"Alicia a través del espejo", descripcion:"Cuenta la historia de Alicia quien se pregunta cómo debe de ser el Mundo a Través del Espejo, se sorprende al comprobar que puede pasar a través de él, llegando a un mundo de fantasía poblado por seres de lo más extraño. Allí, debe jugar una gran partida de ajedrez donde conocerá a los habitantes de este mundo.", imagen:"aliciaenelpaisdelasmaravillas.png", precio:1500, categoria:"Ciencia ficción", stock:4}
+];
+
+export default productos;
