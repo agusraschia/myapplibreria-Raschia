@@ -12,7 +12,7 @@ const NavBar = () => {
                 <NavLink className="nav-link link_header" to={"/menu"}>Catálogo</NavLink>
             </li>
             <li className="nav-item">
-                <NavLink className="nav-link link_header" to={"/ofertas"}>Ofertas</NavLink>;
+                <NavLink className="nav-link link_header" to={"/ofertas"}>Ofertas</NavLink>
             </li>
         </ul>
     )

@@ -6,10 +6,9 @@ import Destacado from "./Destacado";
 
 const Home = () => {
     return (
-        <div className="container-fluid fondo_rosa">
-            <Header />
+        <div className="container-fluid fondo_rosa">>
             <Destacado />
-            <Footer />
+        
         </div>
     )
 }
