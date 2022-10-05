@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import logo from "../images/logo libreria.png";
+import logo from "../imagenes/logo libreria.png";
 
 const NavBar = () => {
     return (
@@ -12,10 +12,10 @@ const NavBar = () => {
                 <NavLink className="nav-link link_header" to={"/menu"}>Catálogo</NavLink>
             </li>
             <li className="nav-item">
-                <NavLink className="nav-link link_header" to={"/ofertas"}>Ofertas</NavLink>
+                <NavLink className="nav-link link_header" to={"/ofertas"}>Ofertas</NavLink>;
             </li>
         </ul>
     )
-}
+} 
 
 export default NavBar;

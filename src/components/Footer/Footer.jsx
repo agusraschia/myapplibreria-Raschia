@@ -1,8 +1,8 @@
 import React from "react";
-import twitter from "../images/SM-RRSS-01.png";
-import youtube from "../images/SM-RRSS-02.png";
-import instagram from "../images/SM-RRSS-03.png";
-import facebook from "../images/SM-RRSS-04.png";
+import twitter from "../imagenes/SM-RRSS-01.png";
+import youtube from "../imagenes/SM-RRSS-02.png";
+import instagram from "../imagenes/SM-RRSS-03.png";
+import facebook from "../imagenes/SM-RRSS-04.png";
 
 const Footer = () => {
     return (
